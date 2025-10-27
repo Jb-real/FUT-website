@@ -1,152 +1,176 @@
-/* ====== FUT Library & Digital Services Style ====== */
+/* ===== FUT Library & Digital Services - Colorful Theme ===== */
 
-/* General Reset */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Body Styling */
+/* Body and background */
 body {
-  background: #f7f9f4;
-  color: #333;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a0dad 25%, #ff7f50 100%);
+  color: #fff;
   line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-/* Header Section */
+/* Header */
 header {
-  background: linear-gradient(180deg, #2e8b57, #1f5a37);
-  color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 30px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 header h1 {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Navigation Bar */
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  background: #2f3e2f;
-  border-radius: 6px;
-  overflow: hidden;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-nav ul li {
-  flex: 1;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-  display: block;
-  padding: 0.8rem 1rem;
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #ff9c33, #8a2be2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  background: #8bc34a;
-  color: #1f1f1f;
+  background: linear-gradient(45deg, #fff, #ff7f50);
+  color: #6a0dad;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Header Image */
+/* Figure styling */
 figure {
-  margin: 1.5rem auto;
-  text-align: center;
+  margin-top: 25px;
 }
 
 figure img {
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  width: 70%;
-  height: auto;
+  border-radius: 20px;
+  border: 3px solid #ff7f50;
+  transition: transform 0.4s ease;
+}
+
+figure img:hover {
+  transform: scale(1.03);
 }
 
 figcaption {
-  margin-top: 0.8rem;
-  color: #f2f2f2;
+  margin-top: 10px;
   font-style: italic;
+  color: #ffe6ff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
-/* Main Section */
+/* Article and Main content */
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Headings */
-h2, h3, h4 {
-  color: #2e8b57;
-  margin-bottom: 0.8rem;
+article h2,
+article h3,
+article h4 {
+  color: #ffb347;
+  margin-bottom: 10px;
 }
 
-/* Paragraphs */
 p {
-  margin-bottom: 1rem;
-  text-align: justify;
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-/* Aside */
-aside {
-  background: #f0f8f5;
-  border-left: 4px solid #2e8b57;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-top: 1rem;
-}
-
-/* Links */
+/* Links inside main */
 a {
-  color: #2e8b57;
-  text-decoration: none;
-  font-weight: bold;
+  color: #ffe;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #1a4d2e;
+  color: #ffb347;
+}
+
+/* Details and Summary */
+details {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+summary {
+  color: #ffdf80;
+  font-weight: bold;
+}
+
+details p {
+  margin-top: 10px;
+  color: #fff;
 }
 
 /* Footer */
 footer {
-  background: #1f5a37;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-top: 3px solid #8bc34a;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
-/* HR Lines */
+footer p {
+  color: #fff;
+}
+
+/* Horizontal lines */
 hr {
-  border: 0;
-  border-top: 1px solid #ddd;
-  margin: 1.5rem 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #ff7f50, #8a2be2);
+  margin: 25px 0;
+  border-radius: 2px;
 }
 
-/* Responsive */
+/* Responsive design */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
+    gap: 15px;
   }
+
   figure img {
     width: 90%;
+    height: auto;
   }
+
   main {
-    padding: 1rem;
+    padding: 20px;
   }
 }
